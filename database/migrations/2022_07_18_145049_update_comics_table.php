@@ -14,15 +14,7 @@ class UpdateComicsTable extends Migration
     public function up()
     {
         Schema::table('comics', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
-            $table->string('title');
             $table->string('description',2000);
-            $table->string('thumb');
-            $table->string('price');
-            $table->string('series');
-            $table->dateTime('sale_date');
-            $table->string('type');
         });
     }
 
